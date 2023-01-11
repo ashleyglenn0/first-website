@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <title>
+        D & G Quality Construction
+    </title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="D & G Logo" />
+        <button class="signin">Sign In</button>
+    </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <div class="container">
+                <div class="firstName">
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="first_name" />
+                </div>
+                <div class="lastName">
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" name="last_name" />
+                </div>
+                <div class="email">
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email_address" />
+                </div>
+                <div class="phone">
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input type="text" id="phoneNumber" name="phone_number" />
+                </div>
+            </div>
+                <div class="checkboxes">
+                    <p>Best time to contact you: </p>
+                    <div>
+                        <input type="checkbox" id="morning" name="morning" />
+                        <label for="morning">Morning</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="afternoon" name="afternoon" />
+                        <label for="afternoon">Afternoon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="evening" name="evening" />
+                        <label for="evening">Evening</label>
+                    </div>
+                </div>
+                <div class="comments">
+                    <label for="comments">Additional Comments: </label>
+                    <br>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+
+    </form>
+    <footer>
+        <img class="footerLog" src="../images/logo.jpeg" alt="Generic Picture" />
+        <div class="footerNav">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

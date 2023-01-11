@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75px 40vh 40vh 80px;
+    grid-template-areas: 
+                        "navigation navigation navigation navigation"
+                         "image image about about"
+                         "other other other other"
+                         "footer footer footer footer"
+}
+.smallLogo {
+    height: 25px;
+    width: 25px;
+}
+
+.navigation{
+    padding: 10px;
+    grid-area: navigation;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: wheat;
+    border: 2px solid red;
+}
+
+
+.image{
+    grid-area: image;
+    background-color: wheat;
+    border: 2px solid red;
+    align-items: center;
+    padding-left: 250px;
+    padding-bottom: 160px;
+}
+
+.logo{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    grid-area: about;
+    background-color: wheat;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.other{
+    grid-area: other;
+    background-color: wheat;
+    border: 2px solid red;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: wheat;
+    border: 2px solid red;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*mobile view*/
+/* @media screen and (min-width: 500px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "header"
+                             "navigation" 
+                             "image" 
+                             "about"
+                             "other"
+                             "footer"
+    }
+    .navigation{
+        padding: 10px;
+        grid-area: navigation;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        background-color: wheat;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+}
+
+mobile medium view
+@media screen and (min-width: 700px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header navigation"
+                             "image about"
+                             "other other"
+                             "footer footer"
+                            
+    }
+    .navigation{
+        padding: 10px;
+        grid-area: navigation;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        background-color: wheat;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+}
+/*mobile medium view*/
+/* @media screen and (max-width: 499px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header" 
+                             "navigation"
+                             "image" 
+                             "about"
+                             "other" 
+                             "footer"
+                            
+    }
+    .navigation{
+        padding: 10px;
+        grid-area: navigation;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        background-color: wheat;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+}  */
