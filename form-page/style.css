@@ -1,0 +1,134 @@
+body {
+    background-color: #a4a48c;
+    color:#4C4B4A;
+    font-family: "Abel", sans-serif;
+}
+
+button {
+    background-color:#BF985A;
+    font-family: "Abel", sans-serif;
+    color: #4C4B4A;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav li {
+    margin: 5px;
+}
+
+.logo{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.navigation{
+    padding: 30px;
+    grid-area: navigation;
+    background-color: #E2CC88;
+    color:#4C4B4A;
+    border-top: 2px solid #4C4B4A;
+    border-bottom: 2px solid #4C4B4A;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 400px;
+}
+
+form {
+    margin-left: 475px;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.companyInfo {
+    margin-left: 475px;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.container{
+    height: 450px;
+    width: 400px;
+   
+}
+
+
+.firstName {
+    padding: 10px 115px;
+    height: 20px;
+    width:150px;
+    margin: 5px;
+
+}
+
+.lastName {
+    padding: 10px 115px;
+    height: 20px;
+    width:150px;
+    margin: 5px;
+    
+}
+
+.email {
+    padding: 10px 115px;
+    height: 20px;
+    width:150px;
+    margin: 5px;
+}
+
+.phone {
+    padding: 10px 115px;
+    height: 20px;
+    width:150px;
+    margin: 5px;
+}
+
+.paragraph{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.comments{
+    padding: 5px 115px;
+    height: 20px;
+    width:150px;
+    margin-bottom: 30px;
+   
+}
+
+.checkboxes{
+ margin: 30px;
+ display: flex;
+ justify-content: space-around;
+ padding: 10px;
+ text-align: center;
+  
+}
+
+.button{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}

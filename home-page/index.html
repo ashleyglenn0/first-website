@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <title>
         D & G Quality Construction
     </title>
@@ -12,12 +15,10 @@
 <body>
     <div class="container">
                 <nav class="navigation">
-                    <img class="smallLogo" src="../images/smallLogo.jpeg" alt="D & G Logo" />
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                    <ul class="nav">
+                        <li><a href="../about-page/about.html">About Us</a></li>
+                        <li><a href="../gallery-page/gallery.html">Gallery</a></li>
+                        <li><a href="../form-page/form.html">Contact Us</a></li>
                     </ul>
                 </nav>
             <aside class="about">
@@ -28,8 +29,10 @@
                 <p>If you are in need of home renovation, we would love to hear from you!</p>
                 <p>We do everything from floor installations to kitchen remodeling. </p>
                 <p>Let us show you the quality way!</p>
-                <button>Schedule Consultation</button>
-                <button>Gallery</button>
+                <div class="buttons">
+                    <button onClick="window.location.href='../form-page/form.html';">Schedule Consultation</button>
+                    <button onClick="window.location.href='../gallery-page/gallery.html';">Gallery</button>
+                </div>
             </aside>
             <aside class="image"><img class="logo" src="../images/logo.jpeg" alt="D & G Logo" /></aside>
             <div class="other">
@@ -65,19 +68,8 @@
                     up
                     to
                     your
-                    standards. Give us a try today! You won't regret it.</p>
+                    standards. Try us today! You won't regret it.</p>
             </div>
-            <footer class="footer">
-                <img class="smallLogo" src="../images/smallLogo.jpeg" alt="Generic Picture" />
-                <div class="footerNav">
-                    <ul class="nav">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Home</a></li>
-                    </ul>
-                </div>
-            </footer>
     </div>
 </body>
 

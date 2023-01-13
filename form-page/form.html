@@ -3,25 +3,30 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <title>
         D & G Quality Construction
     </title>
 </head>
 
 <body>
-    <div class="header">
-        <img src="../images/logo.jpeg" alt="D & G Logo" />
-        <button class="signin">Sign In</button>
-    </div>
     <nav class="navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <ul class="nav">
+            <li><a href="../home-page/index.html">Home</a></li>
+            <li><a href="../about-page/about.html">About Us</a></li>
+            <li><a href="../gallery-page/gallery.html">Gallery</a></li>
         </ul>
     </nav>
+    <div>
+        <img class="logo" src="../images/logo.jpeg" alt="D & G Logo" />
+    </div>
+    <div class="companyInfo">
+        <h1>Let's get to work!</h1>
+        <p>Email: dgqualityconstruction5@gmail.com</p>
+    </div>
     <form action="/form-handling-url" method="post">
         <fieldset>
             <legend>Contact Us</legend>
@@ -42,9 +47,8 @@
                     <label for="phoneNumber">Phone Number: </label>
                     <input type="text" id="phoneNumber" name="phone_number" />
                 </div>
-            </div>
                 <div class="checkboxes">
-                    <p>Best time to contact you: </p>
+                    <p class="paragraph">Best time to contact you: </p>
                     <div>
                         <input type="checkbox" id="morning" name="morning" />
                         <label for="morning">Morning</label>
@@ -68,20 +72,7 @@
                 </div>
             </div>
         </fieldset>
-
     </form>
-    <footer>
-        <img class="footerLog" src="../images/logo.jpeg" alt="Generic Picture" />
-        <div class="footerNav">
-            <ul>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
-        </div>
-    </footer>
-
 </body>
 
 </html>

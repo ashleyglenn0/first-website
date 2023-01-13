@@ -3,8 +3,21 @@
     padding: 0;
 }
 
+body {
+    color:#4C4B4A;
+    font-family: "Abel", sans-serif;
+}
+
 a{
     text-decoration: none;
+}
+
+a:visited {
+    color: #4C4B4A;
+}
+
+a:active {
+    color: #4C4B4A;
 }
 
 li{
@@ -14,41 +27,47 @@ li{
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #BF985A;
+    color: #4C4B4A;
+    font-family: "Abel", sans-serif;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
 }
 
 .container {
+    background-color: #A4A48C;
+    color: #4C4B4A;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 75px 40vh 40vh 80px;
     grid-template-areas: 
                         "navigation navigation navigation navigation"
-                         "image image about about"
+                         "image about about about"
                          "other other other other"
                          "footer footer footer footer"
 }
-.smallLogo {
-    height: 25px;
-    width: 25px;
-}
 
 .navigation{
-    padding: 10px;
+    padding: 30px;
     grid-area: navigation;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: wheat;
-    border: 2px solid red;
+    background-color: #E2CC88;
+    color:#4C4B4A;
+    border-top: 2px solid #4C4B4A;
+    border-bottom: 2px solid #4C4B4A;
 }
 
 
 .image{
     grid-area: image;
-    background-color: wheat;
-    border: 2px solid red;
+    background-color: #A4A48C;
     align-items: center;
-    padding-left: 250px;
+    margin-top: 10px;
+    padding-left: 220px;
     padding-bottom: 160px;
 }
 
@@ -62,37 +81,33 @@ ul {
 .about{
     display: flex;
     flex-direction: column;
-    padding: 15px;
     grid-area: about;
-    background-color: wheat;
+    padding-left: 120px;
+    padding-top: 55px;
+    background-color: #A4A48C;
     justify-content: center;
-    border: 2px solid red;
 }
 
 .other{
     grid-area: other;
-    background-color: wheat;
-    border: 2px solid red;
-    padding-top: 50px;
+    background-color: #A4A48C;
+    padding-top: 105px;
     padding-left: 15px;
 }
 
 .footer{
     grid-area: footer;
-    background-color: wheat;
-    border: 2px solid red;
+    background-color: #A4A48C;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.nav li {
+    margin: 5px;
 }
 
-.footerNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+
+.buttons {
+    padding: 20px;
 }
 
 /*mobile view*/
